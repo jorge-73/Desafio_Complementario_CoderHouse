@@ -1,0 +1,27 @@
+<div class="table-responsive container bg-dark my-5">
+  <h2 class="text-center text-white">Products</h2>
+  <table class="table table-bordered table-striped table-hover text-center">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Code</th>
+        <th>Category</th>
+        <th>Stock</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each allProducts}}
+        <tr>
+          <td>{{this.title}}</td>
+          <td>{{this.description}}</td>
+          <td>{{this.price}}</td>
+          <td>{{this.code}}</td>
+          <td>{{this.category}}</td>
+          <td>{{this.stock}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
